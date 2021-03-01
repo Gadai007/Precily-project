@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const { ObjectId } = mongoose.Schema.Types
 
 const todoSchema = new mongoose.Schema({
-    name: {
+    todo: {
         type: String,
         trim: true,
         maxlength: 32,

@@ -20,7 +20,6 @@ const getATodo = async (req, res) => {
 }
 
 const getTodos = async (req, res) => {
-
     const todos = await Todo.find({ user: { _id: req.profile._id } }).populate('user', '_id name')
     if (todos) {
         res.status(200).json(todos)
@@ -31,7 +30,7 @@ const getTodos = async (req, res) => {
 
 const createTodo = async (req, res) => {
     req.body.user = req.profile
-    const newTodo = new Bucket(req.body)
+    const newTodo = new Todo(req.body)
     const todo = await newTodo.save()
     if (todo) {
         res.status(200).json(todo)
