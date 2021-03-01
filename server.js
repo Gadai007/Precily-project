@@ -3,8 +3,9 @@ const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
 const helmet = require('helmet')
 const app = express()
-// const userRoute = require('./routes/userRoute')
-// const authRoute = require('./routes/authRoute')
+const userRoute = require('./routes/userRoute')
+const authRoute = require('./routes/authRoute')
+const todoRoute = require('./routes/todoRoute')
 const PORT = process.env.PORT || 5000
 require('dotenv').config()
 
@@ -26,7 +27,8 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
 }
 
-// app.use('/api', authRoute)
-// app.use('/api', userRoute)
+app.use('/api', authRoute)
+app.use('/api', userRoute)
+app.use('/api', todoRoute)
 
 
