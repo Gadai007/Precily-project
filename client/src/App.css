@@ -4,7 +4,6 @@ body {
   color: white;
 }
 
-
 nav {
   background-color: #ff9292;
   z-index: 1;
@@ -24,7 +23,7 @@ button {
   background-color: #ff5e78 !important;
 }
 
-.medium{
+.medium {
   background-color: #ff5e78 !important;
 }
 
@@ -58,7 +57,7 @@ button {
   border-radius: 10px;
 }
 
-.todo{
+.todo {
   margin-top: 50px;
   padding: 20px;
   background-color: wheat;
@@ -66,21 +65,21 @@ button {
   overflow: hidden;
 }
 
-.black-text{
+.black-text {
   padding-left: 30px;
 }
 
-.txt{
+.txt {
   border-radius: 5px;
   display: inline-block;
   margin: 5px 10px 5px 45px;
   width: 50%;
   height: auto;
   background-color: #ff5e78;
-} 
+}
 
-.bxt{
-  margin:5px;
+.bxt {
+  margin: 5px;
 }
 
 .input-field input[type="text"] + label {
@@ -119,12 +118,12 @@ button {
   main {
     flex: 1 0 auto;
   }
-}
+} 
 
 @media screen and (min-width: 600px) {
   footer {
-    position: absolute;
     bottom: 0;
+    position: absolute;
     width: 100%;
   }
 }
