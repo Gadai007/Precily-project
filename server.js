@@ -6,6 +6,7 @@ const app = express()
 const userRoute = require('./routes/userRoute')
 const authRoute = require('./routes/authRoute')
 const todoRoute = require('./routes/todoRoute')
+const countRoute = require('./routes/countRoute')
 const PORT = process.env.PORT || 5000
 require('dotenv').config()
 
@@ -30,5 +31,6 @@ if (process.env.NODE_ENV === 'production') {
 app.use('/api', authRoute)
 app.use('/api', userRoute)
 app.use('/api', todoRoute)
+app.use('/api', countRoute)
 
 

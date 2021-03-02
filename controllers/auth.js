@@ -87,7 +87,6 @@ const isAuthenticated = (req, res, next) => {
     if (!checker) {
         return res.status(400).json({ error: 'Access denied ' })
     }
-
     next()
 }
 
