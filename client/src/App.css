@@ -34,3 +34,43 @@ button{
   margin-top: 50px;
   padding-left: 50px;
 }
+
+.card{
+  background-color: #ff9292;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.card-image{
+  padding: 10px;
+  background-color: wheat;
+  border-radius: 10px;
+}
+
+.input-field input[type=text] + label {
+  font-size: 18px !important;
+  color: #000;
+}
+
+.input-field input[type=text] {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=email] + label {
+  color: #000;
+}
+
+.input-field input[type=email] {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=password] + label {
+  color: #000;
+}
+
+.input-field input[type=password] {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+
