@@ -84,7 +84,7 @@ const Signin = () => {
                   type="email"
                   className="validate"
                 />
-                <label for="email" className="active">
+                <label htmlFor="email" className="active">
                   <h6>Email</h6>
                 </label>
               </div>
@@ -97,7 +97,7 @@ const Signin = () => {
                   type="password"
                   className="validate"
                 />
-                <label for="password" className="active">
+                <label htmlFor="password" className="active">
                   <h6>Password</h6>
                 </label>
               </div>

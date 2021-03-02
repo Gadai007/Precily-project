@@ -74,7 +74,7 @@ const Signup = () => {
                   type="text"
                   className="validate"
                 />
-                <label for="name" className="active">
+                <label htmlFor="name" className="active">
                   <h6>First Name</h6>
                 </label>
               </div>
@@ -87,7 +87,7 @@ const Signup = () => {
                   type="email"
                   className="validate"
                 />
-                <label for="email" className="active">
+                <label htmlFor="email" className="active">
                   <h6>Email</h6>
                 </label>
               </div>
@@ -100,7 +100,7 @@ const Signup = () => {
                   type="password"
                   className="validate mt-4"
                 />
-                <label for="password" className="active">
+                <label htmlFor="password" className="active">
                   <h6>Password</h6>
                 </label>
               </div>

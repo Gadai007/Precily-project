@@ -48,10 +48,20 @@ const updateTodo = async (req, res) => {
     }
 }
 
+const deleteTodo = async (req, res) =>{
+    const todo = await Todo.findByIdAndDelete({ _id: req.todo._id})
+    if(todo){
+        res.status(200).json(todo)
+    }else{
+        res.status(400).json({ error: 'failed to delete todo'})
+    }
+}
+
 module.exports = {
     createTodo,
     getATodo,
     getTodos,
     getTodoById,
-    updateTodo
+    updateTodo,
+    deleteTodo
 }
