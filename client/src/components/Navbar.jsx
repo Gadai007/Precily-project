@@ -13,12 +13,12 @@ const Navbar = (props) => {
     <React.Fragment>
       <nav>
         <div className="nav-wrapper">
-          <Link className="brand-logo">PRECILY</Link>
-          <Link className="sidenav-trigger">
+          <span className="brand-logo">PRECILY</span>
+          <a className="sidenav-trigger">
             <i className="material-icons chekc" onClick={checkStatus}>
               menu
             </i>
-          </Link>
+          </a>
           <ul id="nav-mobile" className="box right hide-on-med-and-down">
             {!isAuthenticate() && (
               <React.Fragment>
