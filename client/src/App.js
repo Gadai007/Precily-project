@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Switch>
-        <Route path='/' component={Signup}/>
-        <Route path='/signin' component={Signin}/>
+        <Route path='/' exact component={Signup}/>
+        <Route path='/signin' exact component={Signin}/>
       </Switch>
     </BrowserRouter>
   );
