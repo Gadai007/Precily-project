@@ -1,8 +1,8 @@
 {
   "name": "precily",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "assignment for precily",
+  "main": "server.js",
   "scripts": {
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
