@@ -63,6 +63,7 @@ button {
   background-color: wheat;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .black-text {
@@ -123,7 +124,8 @@ button {
 @media screen and (min-width: 600px) {
   footer {
     bottom: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    z-index: 23;
   }
 }
