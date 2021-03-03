@@ -1,7 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
-const helmet = require('helmet')
 const app = express()
 const userRoute = require('./routes/userRoute')
 const authRoute = require('./routes/authRoute')
@@ -10,7 +9,6 @@ const PORT = process.env.PORT || 5000
 require('dotenv').config()
 
 app.use(cookieParser())
-app.use(helmet())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
